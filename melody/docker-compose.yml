@@ -1,0 +1,9 @@
+name: melody
+services:
+    melody:
+        ports:
+            - 5566:5566
+        volumes:
+            - ./config:/app/backend/.profile
+        image: foamzou/melody:latest
+        restart: unless-stopped

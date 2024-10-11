@@ -1,0 +1,9 @@
+services:
+    pix2tex:
+        command: pix2tex/api/run.py
+        image: 'lukasblecher/pix2tex:api'
+        entrypoint: python
+        ports:
+            - '8501:8501'
+        restart: unless-stopped
+

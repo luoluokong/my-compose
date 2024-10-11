@@ -1,0 +1,8 @@
+services:
+    lan-clip:
+        image: chenqiyux/lan-clip
+        ports:
+            - '9501:9501'
+        container_name: localpaste
+        restart: unless-stopped
+

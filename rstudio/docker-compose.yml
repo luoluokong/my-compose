@@ -1,0 +1,9 @@
+services:
+  rstudio:
+    image: rocker/rstudio
+    container_name: rstudio
+    ports:
+      - 8888:8787
+    environment:
+        PASSWORD: password
+  

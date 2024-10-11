@@ -1,0 +1,9 @@
+services:
+  flare:
+    image: soulteary/flare
+    restart: always
+    command: flare
+    ports:
+      - 80:5005
+    volumes:
+      - ./app:/app

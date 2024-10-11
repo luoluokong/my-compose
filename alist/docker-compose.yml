@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+    alist:
+        image: 'xhofe/alist:latest'
+        container_name: alist
+        volumes:
+            - './config:/opt/alist/data'
+            - '/home/luoluo/Documents/alist:/root'
+        ports:
+            - '5244:5244'
+        environment:
+            - PUID=0
+            - PGID=0
+            - UMASK=022
+        restart: unless-stopped
+
